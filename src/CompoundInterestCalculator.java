@@ -13,7 +13,7 @@ public class CompoundInterestCalculator {
     /**************************************************************
      * Main Method                                                *
      * Prompts the user for the principal, interest rate, number  *
-     * of times interest is compounded, and the number of years, *
+     * of times interest is compounded, and the number of years,  *
      * then calculates the total amount in the account.           *
      **************************************************************/
     public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class CompoundInterestCalculator {
         //*********************************************************
         // Calculation Section                                    *
         // Apply the compound interest formula                    *
-        // A = P(1 + r/n)^(nt)                                   *
+        // A = P(1 + r/n)^(nt)                                    *
         //*********************************************************
         annualInterestRate /= 100; // Convert percentage to decimal
         amountInAccount = principal * Math.pow((1 + annualInterestRate / timesCompounded), (timesCompounded * years));
